@@ -1,0 +1,56 @@
+.table-tree
+{
+	width: 100%;
+	font-size: 12px;
+	table-layout: fixed;
+	border: solid 1px #C5D8C7;
+	border-collapse: collapse;
+}
+.table-tree td
+{
+	height: 32px;
+    padding: 0 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+    border: solid 1px #eeeeee;
+}
+
+.table-tree th
+{
+	height: 32px;
+	text-align: center;
+	border: solid 1px #eeeeee;
+	background: url("../images/ui-bg_glass_85_dfeffc_1x400.png") repeat center center;
+}
+
+.row
+{
+	background-color: #FFFFFF;
+}
+
+.row-alt
+{
+	background-color: #F8F8F8;
+}
+
+.img-tree
+{
+	width: 16px;
+	height: 32px;
+    border: 0;
+	vertical-align: middle;
+	cursor: pointer;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* 提示文本div样式 */
+.pager-tip
+{
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    padding-top: 30px;
+}

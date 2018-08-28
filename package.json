@@ -1,0 +1,23 @@
+{
+    "name": "orbit-chart",
+    "version": "1.0.0",
+    "description": "树形数据（层级关系数据）的一种分页方案。",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/laughsky/tree-pager.git"
+    },
+    "keywords": [
+        "tree",
+        "pager"
+    ],
+    "author": "laughsky",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/laughsky/tree-pager/issues"
+    },
+    "homepage": "https://github.com/laughsky/tree-pager#readme"
+}
