@@ -1,4 +1,4 @@
-# orbit-chart
+# tree-pager
 树形数据（层级关系数据）的一种分页方案。
 
 ## 用法
