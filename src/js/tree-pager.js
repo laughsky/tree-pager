@@ -246,7 +246,7 @@ var TreePager = (function () {
         var currentIdx = parseInt($(img).closest("tr").attr("idx"), 10)
         var currentItem = this.data[currentIdx]
         var currentIco = currentItem["Ico"]
-        var currentOutline = currentItem["No"]
+        var currentOutline = currentItem["Outline"]
         var currentLen = currentOutline.split(".").length
 
         // 更新图片和展开状态
@@ -255,19 +255,19 @@ var TreePager = (function () {
 
         for (var i = currentIdx + 1; i < datalen; i++) {
             var item = this.data[i]
-            var outline = item["No"];
+            var outline = item["Outline"];
             var len = outline.split(".").length
-            if (outline.indexOf(currentOutline) != -1 && len > currentLen) {
+            if (outline.indexOf(currentOutline + '.') != -1 && len > currentLen) {
                 if (collapse) {
                     item["hidden"] = true
                 } else if (len == currentLen + 1) {
                     item["hidden"] = collapse
                 } else {
-                    var pNo = outline.substr(0, outline.lastIndexOf("."))
+                    var pOutline = outline.substr(0, outline.lastIndexOf("."))
                     var pItem
                     for (var j = i - 1; j >= 0; j--) {
                         pItem = this.data[j]
-                        if (pItem["No"] == pNo) {
+                        if (pItem["Outline"] == pOutline) {
                             break
                         }
                     }
