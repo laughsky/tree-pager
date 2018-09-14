@@ -239,7 +239,7 @@ var TreePager = (function () {
         }
     }
 
-    // 重写展开或折叠TreeGrid的方法
+    // 展开或折叠TreeTable的方法
     fn.switchTree = function (img) {
         var tree = { '0': '2', '1': '3', '2': '0', '3': '1' }
         var datalen = this.data.length;
